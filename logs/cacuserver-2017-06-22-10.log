@@ -1,0 +1,99 @@
+2017-06-22 10:17:48 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-22 10:17:48 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-22 10:17:48 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-22 10:17:48 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-22 10:17:48 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-22 10:17:48 [ INFO] <app.go:36> 应用启动完成
+2017-06-22 10:18:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-22 10:18:01 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:1483
+2017-06-22 10:18:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 10:18:30 [ERROR] <statistics.go:108> 任务 1 处理异常,err:Error 1045: Access denied for user 'fkfish'@'36.7.151.35' (using password: YES)
+2017-06-22 10:19:02 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-22 10:19:02 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-22 10:19:02 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-22 10:19:02 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-22 10:19:02 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-22 10:19:02 [ INFO] <app.go:36> 应用启动完成
+2017-06-22 10:19:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 10:19:30 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[unionId:16 leader:100046 count:657] 错误,忽略该数据,16 变量值不存在
+2017-06-22 10:19:30 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[unionId:15 leader:100048 count:2] 错误,忽略该数据,15 变量值不存在
+2017-06-22 10:19:30 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[unionId:17 leader:100049 count:4] 错误,忽略该数据,17 变量值不存在
+2017-06-22 10:19:30 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[unionId:16 leader:100051 count:1] 错误,忽略该数据,16 变量值不存在
+2017-06-22 10:19:30 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[unionId:16 leader:100056 count:311] 错误,忽略该数据,16 变量值不存在
+2017-06-22 10:19:30 [ERROR] <cacujob.go:151> 数据存储 mysql admin:123456@tcp(120.27.196.178:3306)/fcadmin?charset=utf8 insert into leaderonlineuser(leader,`count`,date) values(100049,4,'${TIME,day - 1,YYYY-MM-DD}') 错误,忽略该存储,Error 1146: Table 'fcadmin.leaderonlineuser' doesn't exist
+2017-06-22 10:19:30 [ERROR] <cacujob.go:151> 数据存储 mysql admin:123456@tcp(120.27.196.178:3306)/fcadmin?charset=utf8 insert into leaderonlineuser(leader,`count`,date) values(100051,1,'${TIME,day - 1,YYYY-MM-DD}') 错误,忽略该存储,Error 1146: Table 'fcadmin.leaderonlineuser' doesn't exist
+2017-06-22 10:19:30 [ERROR] <cacujob.go:151> 数据存储 mysql admin:123456@tcp(120.27.196.178:3306)/fcadmin?charset=utf8 insert into leaderonlineuser(leader,`count`,date) values(100056,311,'${TIME,day - 1,YYYY-MM-DD}') 错误,忽略该存储,Error 1146: Table 'fcadmin.leaderonlineuser' doesn't exist
+2017-06-22 10:19:30 [ERROR] <cacujob.go:151> 数据存储 mysql admin:123456@tcp(120.27.196.178:3306)/fcadmin?charset=utf8 insert into leaderonlineuser(leader,`count`,date) values(100046,657,'${TIME,day - 1,YYYY-MM-DD}') 错误,忽略该存储,Error 1146: Table 'fcadmin.leaderonlineuser' doesn't exist
+2017-06-22 10:19:30 [ERROR] <cacujob.go:151> 数据存储 mysql admin:123456@tcp(120.27.196.178:3306)/fcadmin?charset=utf8 insert into leaderonlineuser(leader,`count`,date) values(100048,2,'${TIME,day - 1,YYYY-MM-DD}') 错误,忽略该存储,Error 1146: Table 'fcadmin.leaderonlineuser' doesn't exist
+2017-06-22 10:19:30 [ERROR] <cacujob.go:151> 数据存储 mysql admin:123456@tcp(120.27.196.178:3306)/fcadmin?charset=utf8 insert into uniononlineuser(unionId,`count`,date) values(16,969,'${TIME,day - 1,YYYY-MM-DD}') 错误,忽略该存储,Error 1146: Table 'fcadmin.uniononlineuser' doesn't exist
+2017-06-22 10:19:30 [ERROR] <cacujob.go:151> 数据存储 mysql admin:123456@tcp(120.27.196.178:3306)/fcadmin?charset=utf8 insert into uniononlineuser(unionId,`count`,date) values(15,2,'${TIME,day - 1,YYYY-MM-DD}') 错误,忽略该存储,Error 1146: Table 'fcadmin.uniononlineuser' doesn't exist
+2017-06-22 10:19:30 [ERROR] <cacujob.go:151> 数据存储 mysql admin:123456@tcp(120.27.196.178:3306)/fcadmin?charset=utf8 insert into uniononlineuser(unionId,`count`,date) values(17,4,'${TIME,day - 1,YYYY-MM-DD}') 错误,忽略该存储,Error 1146: Table 'fcadmin.uniononlineuser' doesn't exist
+2017-06-22 10:19:30 [ERROR] <cacujob.go:139> 数据存储 2 错误,忽略该存储,proxyOnlineuser 对应的存储值不存在
+2017-06-22 10:19:30 [ERROR] <cacujob.go:151> 数据存储 mysql admin:123456@tcp(120.27.196.178:3306)/fcadmin?charset=utf8 insert into adminonlineuser(`count`,date) values(975,'${TIME,day - 1,YYYY-MM-DD}') 错误,忽略该存储,Error 1146: Table 'fcadmin.adminonlineuser' doesn't exist
+2017-06-22 10:19:30 [ INFO] <statistics.go:111> 处理任务 1 结束,花费时间:596
+2017-06-22 10:23:28 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-22 10:23:28 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-22 10:23:28 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-22 10:23:28 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-22 10:23:28 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-22 10:23:28 [ INFO] <app.go:36> 应用启动完成
+2017-06-22 10:23:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 10:23:30 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[leader:100046 count:657 unionId:16] 错误,忽略该数据,16 变量值不存在
+2017-06-22 10:23:30 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[unionId:15 leader:100048 count:2] 错误,忽略该数据,15 变量值不存在
+2017-06-22 10:23:30 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[leader:100049 count:4 unionId:17] 错误,忽略该数据,17 变量值不存在
+2017-06-22 10:23:30 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[unionId:16 leader:100051 count:1] 错误,忽略该数据,16 变量值不存在
+2017-06-22 10:23:30 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[unionId:16 leader:100056 count:311] 错误,忽略该数据,16 变量值不存在
+2017-06-22 10:23:30 [ERROR] <cacujob.go:151> 数据存储 mysql admin:123456@tcp(120.27.196.178:3306)/fcadmin?charset=utf8 insert into leaderonlineuser(leader,`count`,date) values(100048,2,'${TIME,day - 1,YYYY-MM-DD}') 错误,忽略该存储,Error 1062: Duplicate entry '0' for key 'PRIMARY'
+2017-06-22 10:23:30 [ERROR] <cacujob.go:151> 数据存储 mysql admin:123456@tcp(120.27.196.178:3306)/fcadmin?charset=utf8 insert into leaderonlineuser(leader,`count`,date) values(100049,4,'${TIME,day - 1,YYYY-MM-DD}') 错误,忽略该存储,Error 1062: Duplicate entry '0' for key 'PRIMARY'
+2017-06-22 10:23:30 [ERROR] <cacujob.go:151> 数据存储 mysql admin:123456@tcp(120.27.196.178:3306)/fcadmin?charset=utf8 insert into leaderonlineuser(leader,`count`,date) values(100051,1,'${TIME,day - 1,YYYY-MM-DD}') 错误,忽略该存储,Error 1062: Duplicate entry '0' for key 'PRIMARY'
+2017-06-22 10:23:30 [ERROR] <cacujob.go:151> 数据存储 mysql admin:123456@tcp(120.27.196.178:3306)/fcadmin?charset=utf8 insert into leaderonlineuser(leader,`count`,date) values(100056,311,'${TIME,day - 1,YYYY-MM-DD}') 错误,忽略该存储,Error 1062: Duplicate entry '0' for key 'PRIMARY'
+2017-06-22 10:23:30 [ERROR] <cacujob.go:151> 数据存储 mysql admin:123456@tcp(120.27.196.178:3306)/fcadmin?charset=utf8 insert into uniononlineuser(unionId,`count`,date) values(15,2,'${TIME,day - 1,YYYY-MM-DD}') 错误,忽略该存储,Error 1062: Duplicate entry '0' for key 'PRIMARY'
+2017-06-22 10:23:30 [ERROR] <cacujob.go:151> 数据存储 mysql admin:123456@tcp(120.27.196.178:3306)/fcadmin?charset=utf8 insert into uniononlineuser(unionId,`count`,date) values(17,4,'${TIME,day - 1,YYYY-MM-DD}') 错误,忽略该存储,Error 1062: Duplicate entry '0' for key 'PRIMARY'
+2017-06-22 10:23:30 [ERROR] <cacujob.go:139> 数据存储 2 错误,忽略该存储,proxyOnlineuser 对应的存储值不存在
+2017-06-22 10:23:30 [ INFO] <statistics.go:111> 处理任务 1 结束,花费时间:728
+2017-06-22 10:28:41 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-22 10:28:41 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-22 10:28:41 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-22 10:28:41 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-22 10:28:41 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-22 10:28:41 [ INFO] <app.go:36> 应用启动完成
+2017-06-22 10:29:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-22 10:29:00 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:594
+2017-06-22 10:29:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 10:29:30 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[unionId:16 leader:100046 count:657] 错误,忽略该数据,16 变量值不存在
+2017-06-22 10:29:30 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[leader:100048 count:2 unionId:15] 错误,忽略该数据,15 变量值不存在
+2017-06-22 10:29:30 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[unionId:17 leader:100049 count:4] 错误,忽略该数据,17 变量值不存在
+2017-06-22 10:29:30 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[unionId:16 leader:100051 count:1] 错误,忽略该数据,16 变量值不存在
+2017-06-22 10:29:30 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[unionId:16 leader:100056 count:311] 错误,忽略该数据,16 变量值不存在
+2017-06-22 10:29:30 [ERROR] <cacujob.go:139> 数据存储 2 错误,忽略该存储,proxyOnlineuser 对应的存储值不存在
+2017-06-22 10:29:31 [ INFO] <statistics.go:111> 处理任务 1 结束,花费时间:1041
+2017-06-22 10:30:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-22 10:30:00 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:416
+2017-06-22 10:30:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 10:30:30 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[count:657 unionId:16 leader:100046] 错误,忽略该数据,16 变量值不存在
+2017-06-22 10:30:30 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[unionId:15 leader:100048 count:2] 错误,忽略该数据,15 变量值不存在
+2017-06-22 10:30:30 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[unionId:17 leader:100049 count:4] 错误,忽略该数据,17 变量值不存在
+2017-06-22 10:30:30 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[unionId:16 leader:100051 count:1] 错误,忽略该数据,16 变量值不存在
+2017-06-22 10:30:30 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[leader:100056 count:311 unionId:16] 错误,忽略该数据,16 变量值不存在
+2017-06-22 10:30:30 [ERROR] <cacujob.go:139> 数据存储 2 错误,忽略该存储,proxyOnlineuser 对应的存储值不存在
+2017-06-22 10:30:30 [ INFO] <statistics.go:111> 处理任务 1 结束,花费时间:431
+2017-06-22 10:38:09 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-22 10:38:09 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-22 10:38:09 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-22 10:38:09 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-22 10:38:09 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-22 10:38:09 [ INFO] <app.go:36> 应用启动完成
+2017-06-22 10:38:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 10:38:30 [ INFO] <statistics.go:111> 处理任务 1 结束,花费时间:336
+2017-06-22 10:39:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-22 10:39:00 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:508
+2017-06-22 10:39:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 10:39:30 [ INFO] <statistics.go:111> 处理任务 1 结束,花费时间:153
+2017-06-22 10:40:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-22 10:40:00 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:479
+2017-06-22 10:40:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 10:40:30 [ INFO] <statistics.go:111> 处理任务 1 结束,花费时间:174
+2017-06-22 10:41:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-22 10:41:00 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:397
+2017-06-22 10:41:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 10:41:30 [ INFO] <statistics.go:111> 处理任务 1 结束,花费时间:165

@@ -1,0 +1,15 @@
+#内存限制 配置
+MemoryLimit		1073741824
+#一次任务完成休息时间 配置
+OnceSleepTime	5
+#一次任务处理读取数据上限
+ReadCountLimit	10000
+#日志相关配置
+Log {
+	Level		debug
+	Path		./logs
+	Name		cacuserver
+}
+
+#任务执行路径配置
+JobPath ./conf/job.kcfg

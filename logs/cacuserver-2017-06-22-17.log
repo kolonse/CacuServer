@@ -1,0 +1,502 @@
+2017-06-22 17:43:36 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-22 17:43:36 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-22 17:43:36 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-22 17:43:36 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-22 17:43:36 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-22 17:43:36 [ INFO] <app.go:36> 应用启动完成
+2017-06-22 17:43:40 [ INFO] <statistics.go:103> 开始处理任务 2
+2017-06-22 17:43:41 [ INFO] <statistics.go:111> 处理任务 2 结束,花费时间:1096
+2017-06-22 17:43:50 [ INFO] <statistics.go:103> 开始处理任务 3
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100056 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100056 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:43:50 [ INFO] <statistics.go:111> 处理任务 3 结束,花费时间:527
+2017-06-22 17:44:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-22 17:44:01 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:1060
+2017-06-22 17:44:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 17:44:30 [ INFO] <statistics.go:111> 处理任务 1 结束,花费时间:378
+2017-06-22 17:44:40 [ INFO] <statistics.go:103> 开始处理任务 2
+2017-06-22 17:44:40 [ INFO] <statistics.go:111> 处理任务 2 结束,花费时间:757
+2017-06-22 17:44:50 [ INFO] <statistics.go:103> 开始处理任务 3
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100056]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100056 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:44:50 [ INFO] <statistics.go:111> 处理任务 3 结束,花费时间:181
+2017-06-22 17:45:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-22 17:45:00 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:382
+2017-06-22 17:45:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 17:45:30 [ INFO] <statistics.go:111> 处理任务 1 结束,花费时间:141
+2017-06-22 17:45:40 [ INFO] <statistics.go:103> 开始处理任务 2
+2017-06-22 17:45:40 [ INFO] <statistics.go:111> 处理任务 2 结束,花费时间:147
+2017-06-22 17:45:50 [ INFO] <statistics.go:103> 开始处理任务 3
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100056 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100056]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:45:50 [ INFO] <statistics.go:111> 处理任务 3 结束,花费时间:185
+2017-06-22 17:46:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-22 17:46:00 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:366
+2017-06-22 17:46:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 17:46:30 [ INFO] <statistics.go:111> 处理任务 1 结束,花费时间:142
+2017-06-22 17:46:40 [ INFO] <statistics.go:103> 开始处理任务 2
+2017-06-22 17:46:40 [ INFO] <statistics.go:111> 处理任务 2 结束,花费时间:141
+2017-06-22 17:46:50 [ INFO] <statistics.go:103> 开始处理任务 3
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100056 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100056]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:46:50 [ INFO] <statistics.go:111> 处理任务 3 结束,花费时间:183
+2017-06-22 17:47:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-22 17:47:00 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:368
+2017-06-22 17:47:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 17:47:30 [ INFO] <statistics.go:111> 处理任务 1 结束,花费时间:681
+2017-06-22 17:47:40 [ INFO] <statistics.go:103> 开始处理任务 2
+2017-06-22 17:47:40 [ INFO] <statistics.go:111> 处理任务 2 结束,花费时间:242
+2017-06-22 17:47:50 [ INFO] <statistics.go:103> 开始处理任务 3
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100056 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100056]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:47:50 [ INFO] <statistics.go:111> 处理任务 3 结束,花费时间:180
+2017-06-22 17:48:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-22 17:48:00 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:358
+2017-06-22 17:48:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 17:48:30 [ INFO] <statistics.go:111> 处理任务 1 结束,花费时间:143
+2017-06-22 17:48:40 [ INFO] <statistics.go:103> 开始处理任务 2
+2017-06-22 17:48:40 [ INFO] <statistics.go:111> 处理任务 2 结束,花费时间:149
+2017-06-22 17:48:50 [ INFO] <statistics.go:103> 开始处理任务 3
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100056 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100056 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:48:50 [ INFO] <statistics.go:111> 处理任务 3 结束,花费时间:187
+2017-06-22 17:49:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-22 17:49:00 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:360
+2017-06-22 17:49:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 17:49:30 [ INFO] <statistics.go:111> 处理任务 1 结束,花费时间:142
+2017-06-22 17:49:40 [ INFO] <statistics.go:103> 开始处理任务 2
+2017-06-22 17:49:40 [ INFO] <statistics.go:111> 处理任务 2 结束,花费时间:138
+2017-06-22 17:49:50 [ INFO] <statistics.go:103> 开始处理任务 3
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100056 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100056 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:49:50 [ INFO] <statistics.go:111> 处理任务 3 结束,花费时间:177
+2017-06-22 17:50:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-22 17:50:00 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:369
+2017-06-22 17:50:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 17:50:30 [ INFO] <statistics.go:111> 处理任务 1 结束,花费时间:153
+2017-06-22 17:50:40 [ INFO] <statistics.go:103> 开始处理任务 2
+2017-06-22 17:50:40 [ INFO] <statistics.go:111> 处理任务 2 结束,花费时间:142
+2017-06-22 17:50:50 [ INFO] <statistics.go:103> 开始处理任务 3
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100056 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100056]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:50:50 [ INFO] <statistics.go:111> 处理任务 3 结束,花费时间:194
+2017-06-22 17:51:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-22 17:51:00 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:375
+2017-06-22 17:51:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 17:51:30 [ INFO] <statistics.go:111> 处理任务 1 结束,花费时间:137
+2017-06-22 17:51:40 [ INFO] <statistics.go:103> 开始处理任务 2
+2017-06-22 17:51:40 [ INFO] <statistics.go:111> 处理任务 2 结束,花费时间:138
+2017-06-22 17:51:50 [ INFO] <statistics.go:103> 开始处理任务 3
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100056 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100056 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:51:50 [ INFO] <statistics.go:111> 处理任务 3 结束,花费时间:192
+2017-06-22 17:52:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-22 17:52:00 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:383
+2017-06-22 17:52:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 17:52:30 [ INFO] <statistics.go:111> 处理任务 1 结束,花费时间:141
+2017-06-22 17:52:40 [ INFO] <statistics.go:103> 开始处理任务 2
+2017-06-22 17:52:40 [ INFO] <statistics.go:111> 处理任务 2 结束,花费时间:139
+2017-06-22 17:52:50 [ INFO] <statistics.go:103> 开始处理任务 3
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100056 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100056 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:52:50 [ INFO] <statistics.go:111> 处理任务 3 结束,花费时间:187
+2017-06-22 17:53:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-22 17:53:00 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:367
+2017-06-22 17:53:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 17:53:30 [ INFO] <statistics.go:111> 处理任务 1 结束,花费时间:139
+2017-06-22 17:53:40 [ INFO] <statistics.go:103> 开始处理任务 2
+2017-06-22 17:53:40 [ INFO] <statistics.go:111> 处理任务 2 结束,花费时间:142
+2017-06-22 17:53:50 [ INFO] <statistics.go:103> 开始处理任务 3
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100056 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100056]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:53:50 [ INFO] <statistics.go:111> 处理任务 3 结束,花费时间:179
+2017-06-22 17:54:27 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-22 17:54:27 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-22 17:54:27 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-22 17:54:27 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-22 17:54:27 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-22 17:54:27 [ INFO] <app.go:36> 应用启动完成
+2017-06-22 17:54:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 17:54:30 [ INFO] <statistics.go:111> 处理任务 1 结束,花费时间:354
+2017-06-22 17:54:40 [ INFO] <statistics.go:103> 开始处理任务 2
+2017-06-22 17:54:40 [ INFO] <statistics.go:111> 处理任务 2 结束,花费时间:153
+2017-06-22 17:54:50 [ INFO] <statistics.go:103> 开始处理任务 3
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100056 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100056 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:54:50 [ INFO] <statistics.go:111> 处理任务 3 结束,花费时间:203
+2017-06-22 17:55:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-22 17:55:00 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:523
+2017-06-22 17:55:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 17:55:30 [ INFO] <statistics.go:111> 处理任务 1 结束,花费时间:152
+2017-06-22 17:55:40 [ INFO] <statistics.go:103> 开始处理任务 2
+2017-06-22 17:55:40 [ INFO] <statistics.go:111> 处理任务 2 结束,花费时间:158
+2017-06-22 17:55:50 [ INFO] <statistics.go:103> 开始处理任务 3
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100056 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100056 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 17:55:50 [ INFO] <statistics.go:111> 处理任务 3 结束,花费时间:201
+2017-06-22 17:56:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-22 17:56:00 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:394

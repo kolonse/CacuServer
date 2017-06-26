@@ -1,0 +1,51 @@
+2017-06-19 11:46:52 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-19 11:46:52 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-19 11:46:52 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-19 11:46:52 [ INFO] <statistics.go:38> StatisticsModule Init 完成
+2017-06-19 11:46:52 [ INFO] <statistics.go:42> StatisticsModule 服务启动完成
+2017-06-19 11:46:52 [ INFO] <app.go:36> 应用启动完成
+2017-06-19 11:46:53 [ INFO] <statistics.go:101> 开始处理任务 0
+2017-06-19 11:46:54 [ INFO] <statistics.go:101> 开始处理任务 0
+2017-06-19 11:46:57 [ INFO] <statistics.go:101> 开始处理任务 0
+2017-06-19 11:46:59 [ INFO] <statistics.go:101> 开始处理任务 0
+2017-06-19 11:47:02 [ INFO] <statistics.go:101> 开始处理任务 0
+2017-06-19 11:47:28 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-19 11:47:28 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-19 11:47:28 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-19 11:47:28 [ INFO] <statistics.go:38> StatisticsModule Init 完成
+2017-06-19 11:47:28 [ INFO] <statistics.go:42> StatisticsModule 服务启动完成
+2017-06-19 11:47:28 [ INFO] <app.go:36> 应用启动完成
+2017-06-19 11:48:00 [ INFO] <statistics.go:101> 开始处理任务 0
+2017-06-19 11:49:00 [ INFO] <statistics.go:101> 开始处理任务 0
+2017-06-19 11:50:00 [ INFO] <statistics.go:101> 开始处理任务 0
+2017-06-19 11:51:00 [ INFO] <statistics.go:101> 开始处理任务 0
+2017-06-19 11:51:18 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-19 11:51:18 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-19 11:51:18 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-19 11:51:18 [ INFO] <statistics.go:38> StatisticsModule Init 完成
+2017-06-19 11:51:18 [ INFO] <statistics.go:42> StatisticsModule 服务启动完成
+2017-06-19 11:51:18 [ INFO] <app.go:36> 应用启动完成
+2017-06-19 11:51:24 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-19 11:51:24 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-19 11:51:24 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-19 11:51:24 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-19 11:51:24 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-19 11:51:24 [ INFO] <app.go:36> 应用启动完成
+2017-06-19 11:52:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-19 11:52:01 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:1297
+2017-06-19 11:53:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-19 11:53:01 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:1315
+2017-06-19 11:54:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-19 11:54:01 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:1314
+2017-06-19 11:55:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-19 11:55:01 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:1290
+2017-06-19 11:56:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-19 11:56:01 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:1378
+2017-06-19 11:57:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-19 11:57:01 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:1378
+2017-06-19 11:58:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-19 11:58:01 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:1292
+2017-06-19 11:59:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-19 11:59:01 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:1247
+2017-06-19 12:00:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-19 12:00:01 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:1300

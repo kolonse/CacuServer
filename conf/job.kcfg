@@ -1,0 +1,148 @@
+#JOBS 任务列表配置
+#支持数据库读取命令 mysql host/port/user/password/db sql
+#支持mongo读取命令 mongo host/port/user/password/db sql
+#如果密码为空填写 -
+#支持直接常数,Count 配置常数 - 表示 Read 只会调用一次
+
+# ${TIME,day/month/minute/seconds -/+ n,format} 表示时间格式化函数
+# ${SUM,name,Array[0][i].price,Array[0][i].leader} 
+# 求和函数,表示按照array每一项的leader进行加和得出 Object{leader:xx},将结果命名为 name
+# 
+# ${SUM,name,Array[0][i].price,Array[0][i].labourunionId}
+# 求和函数,表示按照 array 每一项的 labourunionId 进行加和得出 Object{labourunionId:xx}
+
+# ${SUM,name,Array[0][i].price,GObject[1][Array[0][i].labourunionId].proxyId}
+# 求和函数,表示按照 aproxyId 进行加和得出 Object{proxyId:xx}
+
+# ${FOR,OBJECT,proxyMoney} 
+# for 函数,用于遍历对象,出现该函数必须配合 ${KEY} ${VALUE} 使用
+
+# ${FOR,VALUE,Array} 
+# for 函数,用于遍历数组,出现该函数必须配合 ${INDEX} ${VALUE} 使用
+
+# ${LUASUM,./conf/xx.lua,var name,div name,arg1,arg2...}
+# lua求和脚本, lua脚本必须实现 entry函数,返回值必须为float
+# entry函数的参数数目和 arg1,arg2... 这里的参数数目必须一致
+# for test
+#MysqlFcpay   admin:123456@tcp(120.27.196.178:3306)/fcpay?charset=utf8
+#MysqlFcadmin admin:123456@tcp(120.27.196.178:3306)/fcadmin?charset=utf8
+#MysqlFkfish  admin:123456@tcp(120.27.196.178:3306)/fkfish?charset=utf8
+#MongoCarduse mongodb://120.27.196.178/storeServer
+
+# for dev
+MysqlFcpay   admin:111111@tcp(127.0.0.1:3306)/fcpay?charset=utf8
+MysqlFcadmin admin:111111@tcp(127.0.0.1:3306)/fcadmin?charset=utf8
+MysqlFkfish  admin:111111@tcp(127.0.0.1:3306)/fkfish?charset=utf8
+MongoCarduse mongodb://127.0.0.1/storeServer
+#如果配置中出现 $gte并不想替换那么需要配置一下,表示不进行替换
+gte "$gte"
+lte "$lte"
+# 每日计费统计
+Jobs {
+	#必须提供 count 方法
+	Count "mysql $MysqlFcpay select count(*) from pay where time_end >='${TIME,day - 1,YYYYMMDD000000}' &&  time_end <='${TIME,day - 1,YYYYMMDD235959}'&&status=99"
+	# 进行统计的数据,必须提供 read once 数据,为数组的方法
+	Array "mysql $MysqlFcpay select leader,labourunionId,sum(price) as price from pay  where time_end >='${TIME,day - 1,YYYYMMDD000000}'&&time_end <='${TIME,day - 1,YYYYMMDD235959}'&&status=99 GROUP BY leader"
+	#全局数据读取, 用户任务额外参数 和 Read 不同的是指定了一个 key 字段
+	GObject "mysql $MysqlFcadmin BY_id select id,sharingrate from proxy"
+	GObject "mysql $MysqlFcadmin BY_id select id,proxyId from `union`"
+	GObject "mysql $MysqlFcadmin BY_id select id,type,unionId,proxyId,sharingrate from `unioner`"
+	GObject "mysql $MysqlFcadmin BY_unionId select id,type,unionId,proxyId,sharingrate from `unioner` where type=0"
+	GObject "mysql $MysqlFcadmin BY_Admin select 'Admin',0 as T"
+	#统计任务时刻 0 * * * * *  分别表示 秒 分 时 日 月 周
+	Time "0 0 0 * * *"
+	#计算逻辑 格式:计算后的变量名 = 表达式 
+	Cacu "${SUM,leaderMoney,Array[0][i][price],Array[0][i][leader]}"
+	Cacu "${SUM,unionMoney,Array[0][i][price],Array[0][i][labourunionId]}"
+	Cacu "${SUM,proxyMoney,Array[0][i][price],GObject[1][Array[0][i][labourunionId]][proxyId]}"
+	Cacu "${SUM,adminMoney,Array[0][i][price],GObject[4][Admin][Admin]}"
+	Cacu "${LUASUM,./conf/leaderIncome.lua,leaderIncome,Array[0][i][leader],GObject[2][Array[0][i][leader]][type],GObject[2][Array[0][i][leader]][sharingrate],GObject[0][GObject[1][Array[0][i][labourunionId]][proxyId]][sharingrate],GObject[3][Array[0][i][labourunionId]][sharingrate],Array[0][i][price]}"
+	Cacu "${LUASUM,./conf/leaderIncome2.lua,leaderIncome2,Array[0][i][leader],GObject[2][Array[0][i][leader]][type],GObject[2][Array[0][i][leader]][sharingrate],GObject[0][GObject[1][Array[0][i][labourunionId]][proxyId]][sharingrate],GObject[3][Array[0][i][labourunionId]][sharingrate],Array[0][i][price]}"
+	Cacu "${LUASUM,./conf/leaderIncome3.lua,leaderIncome3,GObject[3][Array[0][i][labourunionId]][id],GObject[2][Array[0][i][leader]][type],GObject[2][Array[0][i][leader]][sharingrate],GObject[0][GObject[1][Array[0][i][labourunionId]][proxyId]][sharingrate],GObject[3][Array[0][i][labourunionId]][sharingrate],Array[0][i][price]}"
+	Cacu "${LUASUM,./conf/unionIncome.lua,unionIncome,Array[0][i][labourunionId],GObject[0][GObject[1][Array[0][i][labourunionId]][proxyId]][sharingrate],GObject[3][Array[0][i][labourunionId]][sharingrate],Array[0][i][price]}"
+	#要计算 工会收益中代理收到的钱
+	Cacu "${LUASUM,./conf/proxyIncome.lua,unionIncome2,Array[0][i][labourunionId],GObject[0][GObject[1][Array[0][i][labourunionId]][proxyId]][sharingrate],GObject[3][Array[0][i][labourunionId]][sharingrate],Array[0][i][price]}"
+	Cacu "${LUASUM,./conf/proxyIncome.lua,proxyIncome,GObject[1][Array[0][i][labourunionId]][proxyId],GObject[0][GObject[1][Array[0][i][labourunionId]][proxyId]][sharingrate],GObject[3][Array[0][i][labourunionId]][sharingrate],Array[0][i][price]}"
+	Cacu "${LUASUM,./conf/adminIncome.lua,adminIncome,GObject[4][Admin][Admin],GObject[0][GObject[1][Array[0][i][labourunionId]][proxyId]][sharingrate],Array[0][i][price]}"
+	#存储数据
+	Store "${FOR,OBJECT,proxyMoney,mysql $MysqlFcadmin insert into proxycharge(proxyId,money,date) values(${KEY},${VALUE},'${TIME,day - 1,YYYY-MM-DD}')}"
+	Store "${FOR,OBJECT,unionMoney,mysql $MysqlFcadmin insert into unioncharge(unionId,money,date) values(${KEY},${VALUE},'${TIME,day - 1,YYYY-MM-DD}')}"
+	Store "${FOR,OBJECT,leaderMoney,mysql $MysqlFcadmin insert into leadercharge(leader,money,date) values(${KEY},${VALUE},'${TIME,day - 1,YYYY-MM-DD}')}"
+	Store "${FOR,OBJECT,adminMoney,mysql $MysqlFcadmin insert into admincharge(money,date) values(${VALUE},'${TIME,day - 1,YYYY-MM-DD}')}"
+	Store "${FOR,OBJECT,leaderIncome,mysql $MysqlFcadmin insert into leaderincome(leader,selfmoney,date) values(${KEY},${VALUE},'${TIME,day - 1,YYYY-MM-DD}')}"
+	Store "${FOR,OBJECT,leaderIncome2,mysql $MysqlFcadmin update leaderincome set unionermoney=${VALUE} where leader=${KEY}&&date='${TIME,day - 1,YYYY-MM-DD}'}"
+	Store "${FOR,OBJECT,leaderIncome3,mysql $MysqlFcadmin update leaderincome set total=${VALUE} where leader=${KEY}&&date='${TIME,day - 1,YYYY-MM-DD}'}"
+	Store "${FOR,OBJECT,unionIncome,mysql $MysqlFcadmin insert into unionincome(unionId,money,date) values(${KEY},${VALUE},'${TIME,day - 1,YYYY-MM-DD}')}"
+	Store "${FOR,OBJECT,unionIncome2,mysql $MysqlFcadmin update unionincome set proxymoney=${VALUE} where unionId=${KEY}&&date='${TIME,day - 1,YYYY-MM-DD}'}"
+	Store "${FOR,OBJECT,proxyIncome,mysql $MysqlFcadmin insert into proxyincome(proxyId,money,date) values(${KEY},${VALUE},'${TIME,day - 1,YYYY-MM-DD}')}"
+	Store "${FOR,OBJECT,adminIncome,mysql $MysqlFcadmin insert into adminincome(money,date) values(${VALUE},'${TIME,day - 1,YYYY-MM-DD}')}"
+}
+
+# 每日活跃统计
+Jobs {
+	#必须提供 count 方法
+	Count "mysql $MysqlFkfish select count(*) from roles where last_login >='${TIME,day - 1,YYYY-MM-DD 00:00:00}'&&last_login <='${TIME,day - 1,YYYY-MM-DD 23:59:59}'"
+	# 进行统计的数据,必须提供 read once 数据,为数组的方法
+	Array "mysql $MysqlFkfish SELECT unionId,leader,COUNT(*) AS `count` FROM roles where last_login >='${TIME,day - 1,YYYY-MM-DD 00:00:00}'&&last_login <='${TIME,day - 1,YYYY-MM-DD 23:59:59}' GROUP BY leader"
+	#全局数据读取, 用户任务额外参数 和 Read 不同的是指定了一个 key 字段
+	GObject "mysql $MysqlFcadmin BY_id select id,proxyId from `union`"
+	GObject "mysql $MysqlFcadmin BY_Admin select 'Admin',0 as T"
+	#统计任务时刻 0 * * * * *  分别表示 秒 分 时 日 月 周
+	Time "0 20 0 * * *"
+	#计算逻辑 格式:计算后的变量名 = 表达式 
+	Cacu "${SUM,leaderOnlineuser,Array[0][i][count],Array[0][i][leader]}"
+	Cacu "${SUM,unionOnlineuser,Array[0][i][count],Array[0][i][unionId]}"
+	Cacu "${SUM,proxyOnlineuser,Array[0][i][count],GObject[0][Array[0][i][unionId]][proxyId]}"
+	Cacu "${SUM,adminOnlineuser,Array[0][i][count],GObject[1][Admin][Admin]}"
+	#存储数据
+	Store "${FOR,OBJECT,leaderOnlineuser,mysql $MysqlFcadmin insert into leaderonlineuser(leader,`count`,date) values(${KEY},${VALUE},'${TIME,day - 1,YYYY-MM-DD}')}"
+	Store "${FOR,OBJECT,unionOnlineuser,mysql $MysqlFcadmin insert into uniononlineuser(unionId,`count`,date) values(${KEY},${VALUE},'${TIME,day - 1,YYYY-MM-DD}')}"
+	Store "${FOR,OBJECT,proxyOnlineuser,mysql $MysqlFcadmin insert into proxyonlineuser(proxyId,`count`,date) values(${KEY},${VALUE},'${TIME,day - 1,YYYY-MM-DD}')}"
+	Store "${FOR,OBJECT,adminOnlineuser,mysql $MysqlFcadmin insert into adminonlineuser(`count`,date) values(${VALUE},'${TIME,day - 1,YYYY-MM-DD}')}"
+}
+
+# 每日新增统计
+Jobs {
+	#必须提供 count 方法
+	Count "mysql $MysqlFkfish select count(*) from roles where create_time >='${TIME,day - 1,YYYY-MM-DD 00:00:00}' &&  create_time <='${TIME,day - 1,YYYY-MM-DD 23:59:59}'"
+	# 进行统计的数据,必须提供 read once 数据,为数组的方法
+	Array "mysql $MysqlFkfish SELECT unionId,leader,COUNT(*) AS `count` FROM roles where create_time >='${TIME,day - 1,YYYY-MM-DD 00:00:00}' &&  create_time <='${TIME,day - 1,YYYY-MM-DD 23:59:59}' GROUP BY leader"
+	#全局数据读取, 用户任务额外参数 和 Read 不同的是指定了一个 key 字段
+	GObject "mysql $MysqlFcadmin BY_id select id,proxyId from `union`"
+	GObject "mysql $MysqlFcadmin BY_Admin select 'Admin',0 as T"
+	#统计任务时刻 0 * * * * *  分别表示 秒 分 时 日 月 周
+	Time "0 40 0 * * *"
+	#计算逻辑 格式:计算后的变量名 = 表达式 
+	Cacu "${SUM,leaderNewuser,Array[0][i][count],Array[0][i][leader]}"
+	Cacu "${SUM,unionNewuser,Array[0][i][count],Array[0][i][unionId]}"
+	Cacu "${SUM,proxyNewuser,Array[0][i][count],GObject[0][Array[0][i][unionId]][proxyId]}"
+	Cacu "${SUM,adminNewuser,Array[0][i][count],GObject[1][Admin][Admin]}"
+	#存储数据
+	Store "${FOR,OBJECT,leaderNewuser,mysql $MysqlFcadmin insert into leadernewuser(leader,`count`,date) values(${KEY},${VALUE},'${TIME,day - 1,YYYY-MM-DD}')}"
+	Store "${FOR,OBJECT,unionNewuser,mysql $MysqlFcadmin insert into unionnewuser(unionId,`count`,date) values(${KEY},${VALUE},'${TIME,day - 1,YYYY-MM-DD}')}"
+	Store "${FOR,OBJECT,proxyNewuser,mysql $MysqlFcadmin insert into proxynewuser(proxyId,`count`,date) values(${KEY},${VALUE},'${TIME,day - 1,YYYY-MM-DD}')}"
+	Store "${FOR,OBJECT,adminNewuser,mysql $MysqlFcadmin insert into adminnewuser(`count`,date) values(${VALUE},'${TIME,day - 1,YYYY-MM-DD}')}"
+}
+
+# 房卡消耗
+Jobs {
+	#必须提供 count 方法
+	Count "mongo $MongoCarduse carduseds _sel_{"_id":0,"data.leader":1,"data.unionId":1,"data.cardcount":1}_ect_ {"data.dateAt":{"$gte":"${TIME,day - 1,YYYY-MM-DD 00:00:00}","$lte":"${TIME,day - 1,YYYY-MM-DD 23:59:59}"}}"
+	# 进行统计的数据,必须提供 read once 数据,为数组的方法
+	Array "mongo $MongoCarduse carduseds _sel_{"_id":0,"data.leader":1,"data.unionId":1,"data.cardcount":1}_ect_ {"data.dateAt":{"$gte":"${TIME,day - 1,YYYY-MM-DD 00:00:00}","$lte":"${TIME,day - 1,YYYY-MM-DD 23:59:59}"}}"
+	#全局数据读取, 用户任务额外参数 和 Read 不同的是指定了一个 key 字段
+	GObject "mysql $MysqlFcadmin BY_id select id,proxyId from `union`"
+	GObject "mysql $MysqlFcadmin BY_Admin select 'Admin',0 as T"
+	#统计任务时刻 0 * * * * *  分别表示 秒 分 时 日 月 周
+	Time "0 0 1 * * *"
+	#计算逻辑 格式:计算后的变量名 = 表达式 
+	Cacu "${LUASUM,./conf/carduse.lua,leaderCarduse,Array[0][i][data][leader],Array[0][i][data][cardcount]}"
+	Cacu "${LUASUM,./conf/carduse.lua,unionCarduse,Array[0][i][data][unionId],Array[0][i][data][cardcount]}"
+	Cacu "${LUASUM,./conf/carduse.lua,proxyCarduse,GObject[0][Array[0][i][data][unionId]][proxyId],Array[0][i][data][cardcount]}"
+	Cacu "${LUASUM,./conf/carduse.lua,adminCarduse,GObject[1][Admin][Admin],Array[0][i][data][cardcount]}"
+	#存储数据
+	Store "${FOR,OBJECT,leaderCarduse,mysql $MysqlFcadmin insert into leadercarduse(leader,`count`,date) values(${KEY},${VALUE},'${TIME,day - 1,YYYY-MM-DD}')}"
+	Store "${FOR,OBJECT,unionCarduse,mysql $MysqlFcadmin insert into unioncarduse(unionId,`count`,date) values(${KEY},${VALUE},'${TIME,day - 1,YYYY-MM-DD}')}"
+	Store "${FOR,OBJECT,proxyCarduse,mysql $MysqlFcadmin insert into proxycarduse(proxyId,`count`,date) values(${KEY},${VALUE},'${TIME,day - 1,YYYY-MM-DD}')}"
+	Store "${FOR,OBJECT,adminCarduse,mysql $MysqlFcadmin insert into admincarduse(`count`,date) values(${VALUE},'${TIME,day - 1,YYYY-MM-DD}')}"
+}
