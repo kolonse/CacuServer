@@ -30,9 +30,9 @@
 #MongoCarduse mongodb://120.27.196.178/storeServer
 
 # for dev
-MysqlFcpay   admin:111111@tcp(127.0.0.1:3306)/fcpay?charset=utf8
-MysqlFcadmin admin:111111@tcp(127.0.0.1:3306)/fcadmin?charset=utf8
-MysqlFkfish  admin:111111@tcp(127.0.0.1:3306)/fkfish?charset=utf8
+MysqlFcpay   admin:trW0a8GS*POnur*e@tcp(127.0.0.1:3306)/fcpay?charset=utf8
+MysqlFcadmin admin:trW0a8GS*POnur*e@tcp(127.0.0.1:3306)/fcadmin?charset=utf8
+MysqlFkfish  admin:trW0a8GS*POnur*e@tcp(127.0.0.1:3306)/fkfish?charset=utf8
 MongoCarduse mongodb://127.0.0.1/storeServer
 #如果配置中出现 $gte并不想替换那么需要配置一下,表示不进行替换
 gte "$gte"
@@ -42,7 +42,7 @@ Jobs {
 	#必须提供 count 方法
 	Count "mysql $MysqlFcpay select count(*) from pay where time_end >='${TIME,day - 1,YYYYMMDD000000}' &&  time_end <='${TIME,day - 1,YYYYMMDD235959}'&&status=99"
 	# 进行统计的数据,必须提供 read once 数据,为数组的方法
-	Array "mysql $MysqlFcpay select leader,labourunionId,sum(price) as price from pay  where time_end >='${TIME,day - 1,YYYYMMDD000000}'&&time_end <='${TIME,day - 1,YYYYMMDD235959}'&&status=99 GROUP BY leader"
+	Array "mysql $MysqlFcpay select leader,labourunionId,sum(price)/100 as price from pay  where time_end >='${TIME,day - 1,YYYYMMDD000000}'&&time_end <='${TIME,day - 1,YYYYMMDD235959}'&&status=99 GROUP BY leader,labourunionId"
 	#全局数据读取, 用户任务额外参数 和 Read 不同的是指定了一个 key 字段
 	GObject "mysql $MysqlFcadmin BY_id select id,sharingrate from proxy"
 	GObject "mysql $MysqlFcadmin BY_id select id,proxyId from `union`"
@@ -83,7 +83,7 @@ Jobs {
 	#必须提供 count 方法
 	Count "mysql $MysqlFkfish select count(*) from roles where last_login >='${TIME,day - 1,YYYY-MM-DD 00:00:00}'&&last_login <='${TIME,day - 1,YYYY-MM-DD 23:59:59}'"
 	# 进行统计的数据,必须提供 read once 数据,为数组的方法
-	Array "mysql $MysqlFkfish SELECT unionId,leader,COUNT(*) AS `count` FROM roles where last_login >='${TIME,day - 1,YYYY-MM-DD 00:00:00}'&&last_login <='${TIME,day - 1,YYYY-MM-DD 23:59:59}' GROUP BY leader"
+	Array "mysql $MysqlFkfish SELECT unionId,leader,COUNT(*) AS `count` FROM roles where last_login >='${TIME,day - 1,YYYY-MM-DD 00:00:00}'&&last_login <='${TIME,day - 1,YYYY-MM-DD 23:59:59}' GROUP BY leader,unionId"
 	#全局数据读取, 用户任务额外参数 和 Read 不同的是指定了一个 key 字段
 	GObject "mysql $MysqlFcadmin BY_id select id,proxyId from `union`"
 	GObject "mysql $MysqlFcadmin BY_Admin select 'Admin',0 as T"
@@ -106,7 +106,7 @@ Jobs {
 	#必须提供 count 方法
 	Count "mysql $MysqlFkfish select count(*) from roles where create_time >='${TIME,day - 1,YYYY-MM-DD 00:00:00}' &&  create_time <='${TIME,day - 1,YYYY-MM-DD 23:59:59}'"
 	# 进行统计的数据,必须提供 read once 数据,为数组的方法
-	Array "mysql $MysqlFkfish SELECT unionId,leader,COUNT(*) AS `count` FROM roles where create_time >='${TIME,day - 1,YYYY-MM-DD 00:00:00}' &&  create_time <='${TIME,day - 1,YYYY-MM-DD 23:59:59}' GROUP BY leader"
+	Array "mysql $MysqlFkfish SELECT unionId,leader,COUNT(*) AS `count` FROM roles where create_time >='${TIME,day - 1,YYYY-MM-DD 00:00:00}' &&  create_time <='${TIME,day - 1,YYYY-MM-DD 23:59:59}' GROUP BY leader,unionId"
 	#全局数据读取, 用户任务额外参数 和 Read 不同的是指定了一个 key 字段
 	GObject "mysql $MysqlFcadmin BY_id select id,proxyId from `union`"
 	GObject "mysql $MysqlFcadmin BY_Admin select 'Admin',0 as T"

@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/kolonse/CacuServer/conf"
-	"github.com/kolonse/CacuServer/lib"
+	//	"github.com/kolonse/CacuServer/lib"
 	"github.com/kolonse/CacuServer/script"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
@@ -19,7 +19,7 @@ const (
 )
 
 var (
-	mongopool = lib.NewSafeMap()
+//	mongopool = lib.NewSafeMap()
 )
 
 type mmgo struct {
@@ -64,19 +64,22 @@ func (p *mmgo) init(param string) error {
 	}
 	p.sqtSql = script.NewStringScript()
 	p.sqtSql.Parse(p.sql)
-	if _, ok := mysqlpool.MapIndex(p.connStr); !ok {
-		sess, err := mgo.Dial(p.connStr)
-		if err != nil {
-			return err
-		}
-		mongopool.SetMapIndex(p.connStr, sess.DB("").C(p.collStr))
-	}
+	//	if _, ok := mysqlpool.MapIndex(p.connStr); !ok {
+	//		sess, err := mgo.Dial(p.connStr)
+	//		if err != nil {
+	//			return err
+	//		}
+	//		mongopool.SetMapIndex(p.connStr, sess.DB("").C(p.collStr))
+	//	}
 	return nil
 }
 
 func (p *mmgo) Count() (int, error) {
-	ci, _ := mongopool.MapIndex(p.connStr)
-	c := ci.(*mgo.Collection)
+	sess, err := mgo.Dial(p.connStr)
+	if err != nil {
+		return 0, err
+	}
+	c := sess.DB("").C(p.collStr)
 	s, err := p.sqtSql.Call()
 	if err != nil {
 		return 0, err
@@ -99,11 +102,14 @@ func (p *mmgo) Read() (interface{}, error) {
 	if p.isend {
 		return nil, nil
 	}
-	ci, _ := mongopool.MapIndex(p.connStr)
-	c := ci.(*mgo.Collection)
+	sess, err := mgo.Dial(p.connStr)
+	if err != nil {
+		return nil, err
+	}
+	c := sess.DB("").C(p.collStr)
 	s, err := p.sqtSql.Call()
 	if err != nil {
-		return 0, err
+		return nil, err
 	}
 	var b bson.M
 	err = json.Unmarshal([]byte(s.(string)), &b)

@@ -45,7 +45,7 @@ func (f *sum) Call() (interface{}, error) {
 	} else if vkd == reflect.String {
 		v2, err := strconv.ParseFloat(v.String(), 64)
 		if err != nil {
-			panic("加和数值字段必须为数字")
+			v2 = 0
 		}
 		vl = v2
 	}
