@@ -1,0 +1,68 @@
+2017-06-22 16:02:36 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-22 16:02:36 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-22 16:02:36 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-22 16:02:36 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-22 16:02:36 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-22 16:02:36 [ INFO] <app.go:36> 应用启动完成
+2017-06-22 16:02:40 [ INFO] <statistics.go:103> 开始处理任务 2
+2017-06-22 16:02:40 [ INFO] <statistics.go:111> 处理任务 2 结束,花费时间:346
+2017-06-22 16:02:50 [ INFO] <statistics.go:103> 开始处理任务 3
+2017-06-22 16:02:50 [ INFO] <statistics.go:111> 处理任务 3 结束,花费时间:18
+2017-06-22 16:03:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-22 16:03:00 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:513
+2017-06-22 16:03:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 16:03:30 [ INFO] <statistics.go:111> 处理任务 1 结束,花费时间:165
+2017-06-22 16:03:40 [ INFO] <statistics.go:103> 开始处理任务 2
+2017-06-22 16:03:40 [ INFO] <statistics.go:111> 处理任务 2 结束,花费时间:160
+2017-06-22 16:03:50 [ INFO] <statistics.go:103> 开始处理任务 3
+2017-06-22 16:03:50 [ INFO] <statistics.go:111> 处理任务 3 结束,花费时间:18
+2017-06-22 16:04:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-22 16:04:00 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:398
+2017-06-22 16:04:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 16:04:30 [ INFO] <statistics.go:111> 处理任务 1 结束,花费时间:150
+2017-06-22 16:04:40 [ INFO] <statistics.go:103> 开始处理任务 2
+2017-06-22 16:04:40 [ INFO] <statistics.go:111> 处理任务 2 结束,花费时间:158
+2017-06-22 16:06:18 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-22 16:06:18 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-22 16:06:18 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-22 16:06:18 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-22 16:06:18 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-22 16:06:18 [ INFO] <app.go:36> 应用启动完成
+2017-06-22 16:06:30 [ INFO] <statistics.go:103> 开始处理任务 1
+2017-06-22 16:06:30 [ INFO] <statistics.go:111> 处理任务 1 结束,花费时间:298
+2017-06-22 16:06:40 [ INFO] <statistics.go:103> 开始处理任务 2
+2017-06-22 16:06:40 [ INFO] <statistics.go:111> 处理任务 2 结束,花费时间:140
+2017-06-22 16:06:50 [ INFO] <statistics.go:103> 开始处理任务 3
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100056 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100056 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[cardcount:1 unionId:16 leader:100046]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[leader:100046 cardcount:1 unionId:16]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ERROR] <cacujob.go:123> 计算脚本 2,数据 map[data:map[unionId:16 leader:100046 cardcount:1]] 错误,忽略该数据,16 变量值不存在
+2017-06-22 16:06:50 [ INFO] <statistics.go:111> 处理任务 3 结束,花费时间:192
+2017-06-22 16:07:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-22 16:07:00 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:572

@@ -1,0 +1,10 @@
+2017-06-22 09:23:30 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-22 09:23:30 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-22 09:23:30 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-22 09:23:30 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-22 09:23:30 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-22 09:23:30 [ INFO] <app.go:36> 应用启动完成
+2017-06-22 09:24:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-22 09:24:00 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:622
+2017-06-22 09:25:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-22 09:25:00 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:404

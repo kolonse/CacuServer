@@ -1,0 +1,99 @@
+MysqlHost 				127.0.0.1:3306
+User 					admin111
+Password				123456
+
+MysqlRecorddb			$User:$Password@tcp($MysqlHost)/recorddb?charset=utf8
+MysqlFishdb				$User:$Password@tcp($MysqlHost)/fishdb?charset=utf8
+
+PayCountSql "SELECT COUNT(*) FROM recorddb.onlinerecord,fishdb.`userinfo` WHERE recorddb.onlinerecord.uid=fishdb.`userinfo`.uid"
+PayReadSql  "SELECT channelID as channel,sum(vip_exp) as price FROM `userinfo` GROUP BY channelID"
+
+NewPayCountSql "SELECT COUNT(*) FROM recorddb.onlinerecord,fishdb.`userinfo` WHERE DATEDIFF(NOW(),recorddb.onlinerecord.regTime)=1&&recorddb.onlinerecord.uid=fishdb.`userinfo`.uid"
+NewPayReadSql  "SELECT fishdb.`userinfo`.channelID as channel,sum(fishdb.`userinfo`.vip_exp) as price FROM recorddb.onlinerecord,fishdb.`userinfo` WHERE DATEDIFF(NOW(),recorddb.onlinerecord.regTime)=1&&recorddb.onlinerecord.uid =fishdb.`userinfo`.uid GROUP BY fishdb.`userinfo`.channelID"
+# 每日计费统计
+Jobs {
+	#必须提供 count 方法
+	Count "mysql $MysqlFishdb $PayCountSql"
+	# 进行统计的数据,必须提供 read once 数据,为数组的方法
+	Array "mysql $MysqlFishdb $PayReadSql"
+	#全局数据读取, 用户任务额外参数 和 Read 不同的是指定了一个 key 字段
+	GObject "mysql $MysqlFishdb BY_99999 SELECT '99999',0 as t"
+	GObject "mysql $MysqlRecorddb BY_channel select chanID as channel,globalPaidFee as price from dailyrecord where destDate='${TIME,day - 2,YYYY-MM-DD}'"
+	#统计任务时刻 0 * * * * *  分别表示 秒 分 时 日 月 周
+	Time "0 0 2 * * *"
+	#Time "* * * * * *"
+	#计算逻辑 格式:计算后的变量名 = 表达式 
+	Cacu "${LUASUM,./conf/sum.lua,sumdaypayrecord,Array[0][i][channel],Array[0][i][price],GObject[1][Array[0][i][channel]][price]}"
+	Cacu "${LUASUM,./conf/sum.lua,sumdaypayrecordTotal,GObject[0][99999][99999],Array[0][i][price],GObject[1][Array[0][i][channel]][price]}"	
+	Cacu "${SUM,globalsumdaypayrecord,Array[0][i][price],Array[0][i][channel]}"
+	Cacu "${SUM,globalsumdaypayrecordTotal,Array[0][i][price],GObject[0][99999][99999]}"
+	#存储数据
+	Store "${FOR,OBJECT,sumdaypayrecord,mysql $MysqlRecorddb update dailyrecord set totalPaidFee=${VALUE} where destDate='${TIME,day - 1,YYYY-MM-DD}'&&chanID=${KEY}}"
+	Store "${FOR,OBJECT,sumdaypayrecordTotal,mysql $MysqlRecorddb update dailyrecord set totalPaidFee=${VALUE} where destDate='${TIME,day - 1,YYYY-MM-DD}'&&chanID=${KEY}}"
+	Store "${FOR,OBJECT,globalsumdaypayrecord,mysql $MysqlRecorddb update dailyrecord set globalPaidFee=${VALUE} where destDate='${TIME,day - 1,YYYY-MM-DD}'&&chanID=${KEY}}"
+	Store "${FOR,OBJECT,globalsumdaypayrecordTotal,mysql $MysqlRecorddb update dailyrecord set globalPaidFee=${VALUE} where destDate='${TIME,day - 1,YYYY-MM-DD}'&&chanID=${KEY}}"
+}
+
+# 每日新增用户付费
+Jobs {
+	#必须提供 count 方法
+	Count "mysql $MysqlFishdb $NewPayCountSql"
+	# 进行统计的数据,必须提供 read once 数据,为数组的方法
+	Array "mysql $MysqlFishdb $NewPayReadSql"
+	#全局数据读取, 用户任务额外参数 和 Read 不同的是指定了一个 key 字段
+	GObject "mysql $MysqlFishdb BY_99999 SELECT '99999',0 as t"
+	#统计任务时刻 0 * * * * *  分别表示 秒 分 时 日 月 周
+	Time "0 10 2 * * *"
+	#Time "* * * * * *"
+	#计算逻辑 格式:计算后的变量名 = 表达式 
+	Cacu "${SUM,sumdaypayrecord,Array[0][i][price],Array[0][i][channel]}"
+	Cacu "${SUM,sumdaypayrecordTotal,Array[0][i][price],GObject[0][99999][99999]}"
+	#存储数据
+	Store "${FOR,OBJECT,sumdaypayrecord,mysql $MysqlRecorddb update dailyrecord set newPaidFee=${VALUE} where destDate='${TIME,day - 1,YYYY-MM-DD}'&&chanID=${KEY}}"
+	Store "${FOR,OBJECT,sumdaypayrecordTotal,mysql $MysqlRecorddb update dailyrecord set newPaidFee=${VALUE} where destDate='${TIME,day - 1,YYYY-MM-DD}'&&chanID=${KEY}}"
+}
+# arpu/arppu 统计
+Jobs {
+	Count "mysql $MysqlRecorddb select count(*) from dailyrecord where destDate='${TIME,day - 1,YYYY-MM-DD}'"
+	Array "mysql $MysqlRecorddb select totalPaidFee/dau as arpu,totalPaidFee/newPaidFee as arppu,chanID as channel from dailyrecord where destDate='${TIME,day - 1,YYYY-MM-DD}'"
+	Time "0 40 2 * * *"
+	#Time "* * * * * *"
+	Cacu "${SUM,arpu,Array[0][i][arpu],Array[0][i][channel]}"
+	Cacu "${SUM,arppu,Array[0][i][arppu],Array[0][i][channel]}"
+	Store "${FOR,OBJECT,arpu,mysql $MysqlRecorddb update dailyrecord set arpu=${VALUE} where destDate='${TIME,day - 1,YYYY-MM-DD}'&&chanID=${KEY}}"
+	Store "${FOR,OBJECT,arppu,mysql $MysqlRecorddb update dailyrecord set arppu=${VALUE} where destDate='${TIME,day - 1,YYYY-MM-DD}'&&chanID=${KEY}}"
+}
+# 每月计费统计,就是每日的和
+Jobs {
+	#必须提供 count 方法
+	Count "mysql $MysqlRecorddb select count(*) from dailyrecord where `destDate`>='${TIME,day - 1,YYYY-MM-01}'&&`destDate`<='${TIME,day - 1,YYYY-MM-31}'"
+	# 进行统计的数据,必须提供 read once 数据,为数组的方法
+	Array "mysql $MysqlRecorddb select sum(totalPaidFee) as money,`destDate`,chanID from dailyrecord where `destDate`>='${TIME,day - 1,YYYY-MM-01}'&&`destDate`<='${TIME,day - 1,YYYY-MM-31}' group by `destDate`,chanID"
+	#全局数据读取, 用户任务额外参数 和 Read 不同的是指定了一个 key 字段
+	#GObject "mysql $MysqlArcadefishpay BY_total SELECT 'total',0 as t"
+	#统计任务时刻 0 * * * * *  分别表示 秒 分 时 日 月 周
+	Time "0 20 2 1 * *"
+	#Time "* * * * * *"
+	#计算逻辑 格式:计算后的变量名 = 表达式 
+	Cacu "${SUM,summonthpayrecord,Array[0][i][money],Array[0][i][chanID]}"
+	#存储数据
+	Store "${FOR,OBJECT,summonthpayrecord,mysql $MysqlRecorddb update monthlyrecord set totalPaidFee=${VALUE} where destDate='${TIME,day - 1,YYYY-MM}'&&chanID=${KEY}}"
+}
+
+# 每月新增用户付费
+Jobs {
+	#必须提供 count 方法
+	Count "mysql $MysqlRecorddb select count(*) from dailyrecord where `destDate`>='${TIME,day - 1,YYYY-MM-01}'&&`destDate`<='${TIME,day - 1,YYYY-MM-31}'"
+	# 进行统计的数据,必须提供 read once 数据,为数组的方法
+	Array "mysql $MysqlRecorddb select sum(newPaidFee) as money,`destDate`,chanID from dailyrecord where `destDate`>='${TIME,day - 1,YYYY-MM-01}'&&`destDate`<='${TIME,day - 1,YYYY-MM-31}' group by `destDate`,chanID"
+	#全局数据读取, 用户任务额外参数 和 Read 不同的是指定了一个 key 字段
+	#GObject "mysql $MysqlArcadefishpay BY_total SELECT 'total',0 as t"
+	#统计任务时刻 0 * * * * *  分别表示 秒 分 时 日 月 周
+	Time "0 30 2 1 * *"
+	#Time "* * * * * *"
+	#计算逻辑 格式:计算后的变量名 = 表达式 
+	Cacu "${SUM,summonthnewerpayrecord,Array[0][i][money],Array[0][i][chanID]}"
+	#存储数据
+	Store "${FOR,OBJECT,summonthnewerpayrecord,mysql $MysqlRecorddb update monthlyrecord set newPaidFee=${VALUE} where destDate='${TIME,day - 1,YYYY-MM}'&&chanID=${KEY}}"
+}
+

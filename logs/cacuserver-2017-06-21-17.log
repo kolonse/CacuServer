@@ -1,0 +1,62 @@
+2017-06-21 17:34:55 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-21 17:34:55 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-21 17:34:55 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-21 17:34:55 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-21 17:34:55 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-21 17:34:55 [ INFO] <app.go:36> 应用启动完成
+2017-06-21 17:35:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-21 17:35:00 [ERROR] <cacujob.go:123> 计算脚本 6,数据 map[leader:100056 labourunionId:34 price:153018] 错误,忽略该数据,Admin 变量值不存在
+2017-06-21 17:35:00 [ERROR] <cacujob.go:123> 计算脚本 6,数据 map[leader:100058 labourunionId:35 price:300001] 错误,忽略该数据,Admin 变量值不存在
+2017-06-21 17:35:00 [ERROR] <cacujob.go:123> 计算脚本 6,数据 map[leader:100059 labourunionId:34 price:2640000] 错误,忽略该数据,Admin 变量值不存在
+2017-06-21 17:35:02 [ERROR] <cacujob.go:139> 数据存储 6 错误,忽略该存储,adminIncome 对应的存储值不存在
+2017-06-21 17:35:02 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:2006
+2017-06-21 17:41:45 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-21 17:41:45 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-21 17:41:45 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-21 17:41:45 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-21 17:41:45 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-21 17:41:45 [ INFO] <app.go:36> 应用启动完成
+2017-06-21 17:42:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-21 17:42:03 [ERROR] <cacujob.go:123> 计算脚本 6,数据 map[leader:100056 labourunionId:34 price:153018] 错误,忽略该数据,分区字段必须是字符串或者数字
+2017-06-21 17:42:03 [ERROR] <cacujob.go:123> 计算脚本 6,数据 map[leader:100058 labourunionId:35 price:300001] 错误,忽略该数据,分区字段必须是字符串或者数字
+2017-06-21 17:42:03 [ERROR] <cacujob.go:123> 计算脚本 6,数据 map[labourunionId:34 price:2640000 leader:100059] 错误,忽略该数据,分区字段必须是字符串或者数字
+2017-06-21 17:42:04 [ERROR] <cacujob.go:139> 数据存储 6 错误,忽略该存储,adminIncome 对应的存储值不存在
+2017-06-21 17:42:04 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:4467
+2017-06-21 17:43:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-21 17:43:00 [ERROR] <cacujob.go:123> 计算脚本 6,数据 map[leader:100056 labourunionId:34 price:153018] 错误,忽略该数据,分区字段必须是字符串或者数字
+2017-06-21 17:43:00 [ERROR] <cacujob.go:123> 计算脚本 6,数据 map[leader:100058 labourunionId:35 price:300001] 错误,忽略该数据,分区字段必须是字符串或者数字
+2017-06-21 17:43:00 [ERROR] <cacujob.go:123> 计算脚本 6,数据 map[leader:100059 labourunionId:34 price:2640000] 错误,忽略该数据,分区字段必须是字符串或者数字
+2017-06-21 17:43:01 [ERROR] <cacujob.go:139> 数据存储 6 错误,忽略该存储,adminIncome 对应的存储值不存在
+2017-06-21 17:43:01 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:1951
+2017-06-21 17:44:52 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-21 17:44:52 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-21 17:44:52 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-21 17:44:52 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-21 17:44:52 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-21 17:44:52 [ INFO] <app.go:36> 应用启动完成
+2017-06-21 17:45:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-21 17:45:00 [ERROR] <cacujob.go:123> 计算脚本 6,数据 map[price:153018 leader:100056 labourunionId:34] 错误,忽略该数据,分区字段必须是字符串或者数字
+2017-06-21 17:45:00 [ERROR] <cacujob.go:123> 计算脚本 6,数据 map[leader:100058 labourunionId:35 price:300001] 错误,忽略该数据,分区字段必须是字符串或者数字
+2017-06-21 17:45:00 [ERROR] <cacujob.go:123> 计算脚本 6,数据 map[leader:100059 labourunionId:34 price:2640000] 错误,忽略该数据,分区字段必须是字符串或者数字
+2017-06-21 17:45:02 [ERROR] <cacujob.go:139> 数据存储 6 错误,忽略该存储,adminIncome 对应的存储值不存在
+2017-06-21 17:45:02 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:2091
+2017-06-21 17:47:29 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-21 17:47:29 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-21 17:47:29 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-21 17:47:29 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-21 17:47:29 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-21 17:47:29 [ INFO] <app.go:36> 应用启动完成
+2017-06-21 17:48:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-21 17:48:00 [ERROR] <cacujob.go:123> 计算脚本 6,数据 map[leader:100056 labourunionId:34 price:153018] 错误,忽略该数据,分区字段必须是字符串或者数字
+2017-06-21 17:48:00 [ERROR] <cacujob.go:123> 计算脚本 6,数据 map[price:300001 leader:100058 labourunionId:35] 错误,忽略该数据,分区字段必须是字符串或者数字
+2017-06-21 17:48:00 [ERROR] <cacujob.go:123> 计算脚本 6,数据 map[leader:100059 labourunionId:34 price:2640000] 错误,忽略该数据,分区字段必须是字符串或者数字
+2017-06-21 17:48:02 [ERROR] <cacujob.go:139> 数据存储 6 错误,忽略该存储,adminIncome 对应的存储值不存在
+2017-06-21 17:48:02 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:2038
+2017-06-21 17:49:48 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-21 17:49:48 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-21 17:49:48 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-21 17:49:48 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-21 17:49:48 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-21 17:49:48 [ INFO] <app.go:36> 应用启动完成
+2017-06-21 17:50:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-21 17:50:02 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:2067

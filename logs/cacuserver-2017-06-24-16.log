@@ -1,0 +1,12 @@
+2017-06-24 16:49:24 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-24 16:49:24 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-24 16:49:24 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-24 16:50:06 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-24 16:50:06 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-24 16:50:06 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-24 16:51:15 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-24 16:51:15 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-24 16:51:15 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-24 16:51:15 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-24 16:51:15 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-24 16:51:15 [ INFO] <app.go:36> 应用启动完成

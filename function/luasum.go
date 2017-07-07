@@ -101,7 +101,8 @@ func (f *fluasum) Call() (interface{}, error) {
 		v.SetCallArgs(f.args...)
 		di, e := v.Call()
 		if e != nil {
-			return nil, e
+			//			return nil, e
+			di = reflect.ValueOf("_ilegal_")
 		}
 		d := di.(reflect.Value)
 		dk := d.Kind()

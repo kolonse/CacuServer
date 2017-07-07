@@ -1,0 +1,84 @@
+2017-06-21 16:00:50 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-21 16:00:50 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-21 16:00:50 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-21 16:00:50 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-21 16:00:50 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-21 16:00:50 [ INFO] <app.go:36> 应用启动完成
+2017-06-21 16:01:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-21 16:01:02 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:2435
+2017-06-21 16:10:51 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-21 16:10:51 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-21 16:10:51 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-21 16:10:51 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-21 16:10:51 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-21 16:10:51 [ INFO] <app.go:36> 应用启动完成
+2017-06-21 16:11:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-21 16:11:02 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:2420
+2017-06-21 16:13:39 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-21 16:13:39 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-21 16:13:39 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-21 16:13:39 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-21 16:13:39 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-21 16:13:39 [ INFO] <app.go:36> 应用启动完成
+2017-06-21 16:14:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-21 16:14:02 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:2334
+2017-06-21 16:34:32 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-21 16:34:32 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-21 16:34:32 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-21 16:34:32 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-21 16:34:32 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-21 16:34:32 [ INFO] <app.go:36> 应用启动完成
+2017-06-21 16:34:52 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-21 16:34:52 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-21 16:34:52 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-21 16:34:52 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-21 16:34:52 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-21 16:34:52 [ INFO] <app.go:36> 应用启动完成
+2017-06-21 16:35:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-21 16:35:02 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:2319
+2017-06-21 16:38:11 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-21 16:38:11 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-21 16:38:11 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-21 16:38:11 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-21 16:38:11 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-21 16:38:11 [ INFO] <app.go:36> 应用启动完成
+2017-06-21 16:39:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-21 16:39:04 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:4875
+2017-06-21 16:40:02 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-21 16:40:02 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-21 16:40:02 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-21 16:40:02 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-21 16:40:02 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-21 16:40:02 [ INFO] <app.go:36> 应用启动完成
+2017-06-21 16:41:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-21 16:41:02 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:2965
+2017-06-21 16:42:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-21 16:42:04 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:4778
+2017-06-21 16:43:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-21 16:43:03 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:3534
+2017-06-21 16:46:03 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-21 16:46:03 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-21 16:46:03 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-21 16:46:03 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-21 16:46:03 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-21 16:46:03 [ INFO] <app.go:36> 应用启动完成
+2017-06-21 16:47:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-21 16:47:03 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:3124
+2017-06-21 16:48:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-21 16:48:04 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:4028
+2017-06-21 16:54:09 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-21 16:54:09 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-21 16:54:09 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-21 16:54:09 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-21 16:54:09 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-21 16:54:09 [ INFO] <app.go:36> 应用启动完成
+2017-06-21 16:55:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-21 16:55:02 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:2662
+2017-06-21 16:58:06 [ INFO] <main.go:27> 日志组件加载完成
+2017-06-21 16:58:06 [ INFO] <rpc.go:64> RPC Init 完成
+2017-06-21 16:58:06 [ INFO] <rpc.go:74> RPC 服务启动完成
+2017-06-21 16:58:06 [ INFO] <statistics.go:40> StatisticsModule Init 完成
+2017-06-21 16:58:06 [ INFO] <statistics.go:44> StatisticsModule 服务启动完成
+2017-06-21 16:58:06 [ INFO] <app.go:36> 应用启动完成
+2017-06-21 16:59:00 [ INFO] <statistics.go:103> 开始处理任务 0
+2017-06-21 16:59:01 [ INFO] <statistics.go:111> 处理任务 0 结束,花费时间:1540
