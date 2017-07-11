@@ -30,6 +30,11 @@ func (sm *SafeMap) Keys() []interface{} {
 	return ret
 }
 
+func (sm *SafeMap) Remove(key interface{}) {
+	sm.mtx.Lock()
+	defer sm.mtx.Unlock()
+	delete(sm.m, key)
+}
 func NewSafeMap() *SafeMap {
 	return &SafeMap{
 		m: make(map[interface{}]interface{}),

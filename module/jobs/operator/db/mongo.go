@@ -79,6 +79,7 @@ func (p *mmgo) Count() (int, error) {
 	if err != nil {
 		return 0, err
 	}
+	defer sess.Close()
 	c := sess.DB("").C(p.collStr)
 	s, err := p.sqtSql.Call()
 	if err != nil {
@@ -106,6 +107,7 @@ func (p *mmgo) Read() (interface{}, error) {
 	if err != nil {
 		return nil, err
 	}
+	defer sess.Close()
 	c := sess.DB("").C(p.collStr)
 	s, err := p.sqtSql.Call()
 	if err != nil {

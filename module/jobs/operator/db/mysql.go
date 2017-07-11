@@ -10,7 +10,7 @@ import (
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/kolonse/CacuServer/conf"
-	//	"github.com/kolonse/CacuServer/lib"
+	"github.com/kolonse/CacuServer/lib"
 	"github.com/kolonse/CacuServer/script"
 )
 
@@ -20,7 +20,7 @@ const (
 )
 
 var (
-//	mysqlpool = lib.NewSafeMap()
+	mysqlpool = lib.NewSafeMap()
 )
 
 type mmysql struct {
@@ -54,18 +54,31 @@ func (p *mmysql) init(param string) error {
 	}
 	p.sqtSql = script.NewStringScript()
 	p.sqtSql.Parse(p.sql)
-	//	if _, ok := mysqlpool.MapIndex(p.connStr); !ok {
-	//		db, err := sql.Open("mysql", p.connStr)
-	//		if err != nil {
-	//			return err
-	//		}
-	//		mysqlpool.SetMapIndex(p.connStr, db)
-	//	}
+	p.open()
 	return nil
+}
+func (p *mmysql) open() (*sql.DB, error) {
+	if d, ok := mysqlpool.MapIndex(p.connStr); !ok {
+		db, err := sql.Open("mysql", p.connStr)
+		if err != nil {
+			return nil, err
+		}
+		mysqlpool.SetMapIndex(p.connStr, db)
+		return db, nil
+	} else {
+		db := d.(*sql.DB)
+		err := db.Ping()
+		if err != nil {
+			db.Close()
+			mysqlpool.Remove(p.connStr)
+			db, err = p.open()
+		}
+		return db, err
+	}
 }
 
 func (p *mmysql) Count() (int, error) {
-	db, err := sql.Open("mysql", p.connStr)
+	db, err := p.open()
 	if err != nil {
 		return 0, err
 	}
@@ -98,7 +111,7 @@ func (p *mmysql) Read() (interface{}, error) {
 	if p.isend {
 		return nil, nil
 	}
-	db, err := sql.Open("mysql", p.connStr)
+	db, err := p.open()
 	if err != nil {
 		return nil, err
 	}
@@ -155,7 +168,7 @@ func (p *mmysql) Read() (interface{}, error) {
 }
 
 func (p *mmysql) Write() error {
-	db, err := sql.Open("mysql", p.connStr)
+	db, err := p.open()
 	if err != nil {
 		return err
 	}
